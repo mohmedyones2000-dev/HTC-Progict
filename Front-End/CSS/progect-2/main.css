@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+@keyframes opacity {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+/* reset style */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body,
+button {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* start header style */
+header {
+    padding: 3.3rem 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+    z-index: 999;
+    /* animation: opacity 5s ease .5s 1 both; */
+
+    .header-icon {
+        animation: opacity 5s ease .5s 1 both;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+        animation: opacity 3s ease .5s 1 both;
+
+        ul {
+            display: flex;
+            gap: 4rem;
+
+            a {
+                color: #000000;
+                font-size: 2rem;
+                font-weight: 400;
+                line-height: 2.8rem;
+                border-bottom: 2px solid transparent;
+                transition: .5s;
+
+                &:hover {
+                    border-bottom: 2px solid #000000;
+                }
+            }
+        }
+
+        button {
+            padding: 2rem 3.5rem;
+            border: 1px solid #191A23;
+            border-radius: 14px;
+            color: #000000;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.8rem;
+            background-color: #fff;
+            transition: 1s;
+
+            &:hover {
+                border: solid 1px #ffffff;
+                color: #ffffff;
+                background-color: #000000;
+            }
+        }
+
+        @media (max-width : 1200px) {
+            display: none;
+        }
+    }
+
+    .list-header {
+        display: none;
+
+        @media (max-width : 1200px) {
+            display: inline-block;
+            font-size: 4rem;
+            animation: opacity 3s ease .5s 1 both;
+        }
+    }
+    @media (max-width : 520px) {
+        padding: 3.3rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-width: 100%;
+    }
+}
+
+
+/* end header style */
+
+/* start main style */
+main {
+    display: grid;
+    grid-template-columns: 60fr 4fr;
+    margin-top: 3.3rem;
+    padding: 0px 10rem;
+    /* animation: opacity 5s ease .5s 1 both; */
+
+    .img-main {
+        animation: opacity 5s ease .5s 1 both;
+
+        @media (max-width : 1200px) {
+            grid-row: 1;
+        }
+    }
+
+    .content-main {
+        display: flex;
+        flex-direction: column;
+        gap: 3.5rem;
+        animation: opacity 3s ease .5s 1 both;
+
+        h1 {
+            font-size: 6rem;
+            font-weight: 500;
+            line-height: 100%;
+            color: #000000;
+        }
+
+        p {
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.8rem;
+            color: #000000;
+        }
+
+        button {
+            width: fit-content;
+            padding: 2rem 3.5rem;
+            border: solid 1px transparent;
+            border-radius: 1.4rem;
+            background-color: #191A23;
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 2.8rem;
+            color: #ffffff;
+            transition: 1s;
+
+            &:hover {
+                border: solid 1px #000000;
+                color: #000000;
+                background-color: #ffffff;
+            }
+
+            @media (max-width : 1200px) {
+                align-self: center;
+            }
+        }
+
+        @media (max-width : 1200px) {
+            text-align: center;
+        }
+    }
+
+    @media (max-width : 1200px) {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+}
+
+/* end main style */

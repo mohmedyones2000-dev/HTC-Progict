@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
+
+/* recet */
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f3f35b;
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* start header section style */
+
+header {
+    border-bottom: 1px rgba(114, 114, 243, 0.799) solid;
+    display: flex;
+    padding: 10px 120px;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.img_icone {
+    width: 62px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    gap: 32px;
+    align-items: center;
+}
+
+li {
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Lucida Sans', Geneva, Verdana, sans-serif;
+}
+
+.icone_header {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 15px;
+    border: solid rgba(157, 155, 155, 0.366) .5px;
+    background-color: rgba(157, 155, 155, 0.202);
+    border-radius: 15px;
+}
+
+/* end header section style */
+
+/* start main section style */
+
+/* end main section style */
+
+
+/* start aboutus section style */
+
+.aboutUs {
+    padding: 50px;
+}
+
+.aboutUs .Container {
+    max-width: 1200px;
+    max-width: 80vw;
+    display: flex;
+    padding: 20px auto;
+    justify-self: center;
+    flex-basis: 200px;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    gap: 16px;
+    /* background-color: red; */
+}
+
+.aboutUs .Container .aboutUs_text .container {
+    background-color: #E4ECFB;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    flex-grow: 1;
+
+}
+
+.aboutUs .Container .aboutUs_text .container h2{
+    font-size: 28px;
+    font-weight: 700;
+    color: #292929;
+    margin-bottom: 16px;
+}
+
+.aboutUs .Container .aboutUs_text .container p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7C7C7C;
+    margin-bottom: 16px;
+}
+
+.aboutUs .Container .aboutUs_text .container a{
+    background-color: #FAB149;
+    border-radius: 16px;
+    border: solid 1px #FAB149;
+    padding: 16px 32px;
+
+}
+
+.aboutUs .Container .aboutUs_boxs {
+    /* max-width: 400px; */
+    display: flex;
+    flex: 1 100px;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.aboutUs .Container .aboutUs_boxs .box {
+    background-color: #fff;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    z-index: 2;
+}
+
+.aboutUs .Container .aboutUs_boxs .box h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #050E20;
+    line-height: 24px;
+    letter-spacing: -1%;
+
+}
+
+.aboutUs .Container .aboutUs_boxs .box p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #656565;
+    line-height: 24px;
+    letter-spacing: -1%;
+}
+
+
+/* end aboutus section style */

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            text-align: center;
+            margin-bottom: 7px;
+        }
+        input{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaner">
+    <h1>استمارة تسجيل مستثمر</h1>
+    <h3>أهلا بك في بازار أول مول إفتراضي</h3>
+    <form action="#" method="get">
+        <div class="name">
+            <label for="name"><span style="color: red;">*</span> الاسم التجاري</label>
+            <input type="text" name="name" id="name" placeholder="الاسم التجاري" required>
+        </div>
+        <div class="parcon">
+            <label for="parcon"><span style="color: red;">*</span>الشخص المسؤول</label>
+            <input type="text" name="parcon" id="parcon" placeholder="الشخص المسؤول" required>
+        </div>
+        <div class="city">
+            <label for="city"><span style="color: red;">*</span>المدينة</label>
+            <input type="text" name="city" id="city" placeholder="المدينة" required>
+        </div>
+        <div class="add">
+            <label for="add"> <span style="color: red;">*</span>العنوان</label>
+            <input type="text" name="add" id="add" placeholder="العنوان" required>
+        </div>
+        <div class="img_ligo">
+            <label for="img_ligo">صورة لوغو الشركة</label>
+            <input type="file" name="img_ligo" id="img_ligo" accept=" .jpg , .png ">
+        </div>
+    </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 1 "محمد محمد يونس"</title>
+  </head>
+  <body>
+    <form action="#" method="get">
+      <div class="order_data_section">
+        <div class="name_section">
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required />
+        </div>
+        <br />
+
+        <div class="phone_section">
+          <label for="phone">Phone</label>
+          <input type="text" name="phone" id="phone" required />
+        </div>
+        <br />
+
+        <div class="email_section">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email" required />
+        </div>
+        <br />
+
+        <div class="date_section">
+          <label for="date">Pickup Date/Time</label>
+          <input type="date" name="date" id="date" required />
+        </div>
+        <br />
+
+        <div class="pickup_place_section">
+          <label for="pickup_place">Pickup Place</label>
+          <select name="pickup_place" id="pickup_place">
+            <option value="1">Select One</option>
+            <option value="2">Select Two</option>
+            <option value="3">Select Three</option>
+            <option value="4">Select Four</option>
+            <option value="5">Select Five</option>
+          </select>
+        </div>
+        <br />
+
+        <div class="dropoff_place_section">
+          <label for="dropoff_place">Dropoff Place</label>
+          <input type="text" name="dropoff_place" id="dropoff_place" required />
+        </div>
+        <br />
+      </div>
+
+      <div class="choose_section">
+        <div class="taxi_require_section">
+          <label for="taxi_require">Which Taxi Do You Require ?</label><br />
+          <input
+            type="radio"
+            name="dropoff_place"
+            id="taxi_require"
+            value="car"
+            required
+          />
+          <label for="taxi_require">Car</label><br />
+          <input
+            type="radio"
+            name="dropoff_place"
+            id="taxi_require_van"
+            value="Van"
+            required
+          />
+          <label for="taxi_require_van">Van</label><br />
+          <input
+            type="radio"
+            name="dropoff_place"
+            id="taxi_require_tuk_tuk"
+            value="tuk-tuk"
+            required
+          />
+          <label for="taxi_require_tuk_tuk">Tuk Tuk</label><br />
+        </div>
+        <br />
+
+        <div class="extras_section">
+          <label for="extras">Extras</label><br />
+          <input type="checkbox" name="baby_seat" id="extras" />
+          <label for="extras">Baby Seat</label><br />
+          <input
+            type="checkbox"
+            name="wheelchair_access"
+            id="wheelchair_access"
+          />
+          <label for="wheelchair_access">Wheelchair Access</label><br />
+          <input type="checkbox" name="stock_tip" id="stock_tip" />
+          <label for="stock_tip">Stock Tip</label><br />
+        </div>
+        <br />
+      </div>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </body>
+</html>

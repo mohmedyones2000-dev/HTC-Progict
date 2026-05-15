@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pag 1</title>
+    <style>
+      * {
+        margin-bottom: 1rem;
+      }
+      body {
+        text-align: center;
+        padding: 50px;
+      }
+      input {
+        width: 400px;
+        height: 35px;
+        border-radius: 50px;
+        text-align: center;
+        border: none;
+        box-shadow: 0px 2px 10px gray;
+      }
+      button {
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(128, 128, 128, 0.222);
+        border: transparent;
+        font-size: 20px;
+        width: 200px;
+        height: 35px;
+        border-radius: 50px;
+        &:hover,
+        &:focus {
+          box-shadow: 0px 2px 10px gray;
+        }
+      }
+      .hidden {
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        display: none;
+        border-radius: 2rem;
+        background-color: rgba(44, 43, 43, 0.444);
+        color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" placeholder="الطول" class="height" /><br>
+    <input type="text" placeholder="العرض" class="width" /><br>
+    <button>احسب مساحة المستطيل</button><br>
+    <div class="hidden"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

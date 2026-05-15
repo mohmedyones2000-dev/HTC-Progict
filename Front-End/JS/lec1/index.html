@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lec2</title>
+    <style>
+      * {
+        margin-bottom: 1rem;
+      }
+      body {
+        text-align: center;
+        padding: 30px;
+      }
+      input {
+        width: 400px;
+        height: 35px;
+        border-radius: 50px;
+        text-align: center;
+        border: none;
+        box-shadow: 0px 2px 10px gray;
+      }
+      button {
+        color: grey;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(128, 128, 128, 0.222);
+        border: transparent;
+        font-size: 20px;
+        width: 200px;
+        height: 35px;
+        border-radius: 50px;
+        &:hover,
+        &:focus {
+          box-shadow: 0px 2px 10px gray;
+        }
+      }
+      .print {
+        max-width: 50%;
+        margin: auto;
+        text-align: center;
+        font-size: 30px;
+        display: none;
+        border-radius: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <label for="name">اسم الموظف</label><br />
+    <input type="text" name="name" id="name" placeholder="Enter NAme" /><br />
+    <label for="salary">راتب الموظف</label><br />
+    <input
+      type="number"
+      name="salary"
+      id="salary"
+      placeholder="Enter salary"
+    /><br />
+    <button>طباعة</button>
+    <div class="print"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

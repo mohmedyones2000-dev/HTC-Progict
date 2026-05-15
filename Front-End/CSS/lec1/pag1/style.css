@@ -1,0 +1,92 @@
+* {
+    font-family: "Syne", sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    background-color: black;
+    padding: 40px 100px;
+    /* padding: 50px 100px; */
+}
+
+/* start header section */
+
+header {
+    /* margin: 20px 50px; */
+
+}
+
+h4 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 200px;
+}
+
+nav{
+    display: inline-block;
+    /* margin-left: 150px; */
+}
+
+a{
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0px 15px;
+}
+
+header nav .active{
+    border: solid #ffffff 1px;
+    border-radius: 100px;
+    padding: 15px 32px;
+}
+
+/* start header section */
+
+.hero{
+    margin: 50px;
+    padding: 50px;
+    border-radius: 50px;
+    min-width: 1240px;
+    justify-self: center;
+    background-image: url(./bg-hero.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: right 200px bottom 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 100px;
+}
+
+p {
+    color: white;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 25px;
+    background: #000;
+    background-image: linear-gradient(to right, #0147ff , #0149ff12);
+    color: white;
+    color: lightblue;
+    width: 250px;
+    border: 0px;
+    border-radius: 60px;
+    padding: 20px 30px;
+    margin-top: 40px;
+    transition: all 1s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, #6a92f8 , #6a92f820);
+    color: #e6e9f2;
+    transform: scale(1.08);
+}
+
+/* end header section */

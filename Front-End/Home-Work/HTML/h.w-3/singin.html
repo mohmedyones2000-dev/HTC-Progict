@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Front-End - Singin</title>
+    <link rel="shortcut icon" href="./sin2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Singn In To Course Front-End</h1>
+    <nav class="links_bar">
+      <a href="./login.html">Login</a>
+      <a href="./contact-us.html">Contact Us</a>
+    </nav>
+    <form action="./index.html" method="get">
+      <fieldset>
+        <div class="user_name_section">
+          <label for="user_name">User Name <span>*</span></label
+          ><br />
+          <input
+            type="text"
+            name="first_name"
+            id="user_name"
+            placeholder="Enter First Name..."
+            required
+          />
+          <input
+            type="text"
+            name="last_name"
+            id="last_name"
+            placeholder="Enter Last Name..."
+            required
+          />
+        </div>
+        <br />
+        <div class="password_section">
+          <label for="password">Password<span>*</span></label
+          ><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password..."
+            required
+          />
+        </div>
+        <br />
+        <div class="email_section">
+          <label for="email">Email <span>*</span></label
+          ><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email..."
+            required
+          />
+        </div>
+        <br />
+        <div class="phone_section">
+          <label for="phone">Phone Number</label><br />
+          <input
+            type="text"
+            name="phone"
+            id="phone"
+            placeholder="Enter Phone Number..."
+            pattern="[0-9]{10,13}"
+          />
+        </div>
+        <br />
+        <div class="gender_section">
+          <label for="male_gender">Gender <span>*</span></label
+          ><br />
+          <input type="radio" name="gender" id="male_gender" value="male" />
+          <label class="lable_gender" for="male_gender">Male</label>
+          <input type="radio" name="gender" id="female_gender" value="female" />
+          <label class="lable_gender" for="female_gender">Female</label>
+        </div>
+        <br />
+        <div class="country_section">
+          <select required name="countery">
+            <option value="" disabled selected>
+              Select your country <span style="color: red">*</span>
+            </option>
+            <option value="us">United States</option>
+            <option value="gb">United Kingdom</option>
+            <option value="ca">Canada</option>
+            <option value="au">Australia</option>
+            <option value="de">Germany</option>
+            <option value="fr">France</option>
+            <option value="it">Italy</option>
+            <option value="es">Spain</option>
+            <option value="nl">Netherlands</option>
+            <option value="be">Belgium</option>
+            <option value="ch">Switzerland</option>
+            <option value="at">Austria</option>
+            <option value="se">Sweden</option>
+            <option value="no">Norway</option>
+            <option value="dk">Denmark</option>
+            <option value="fi">Finland</option>
+            <option value="ie">Ireland</option>
+            <option value="pt">Portugal</option>
+            <option value="gr">Greece</option>
+            <option value="pl">Poland</option>
+            <option value="cz">Czech Republic</option>
+            <option value="hu">Hungary</option>
+            <option value="ro">Romania</option>
+            <option value="bg">Bulgaria</option>
+            <option value="hr">Croatia</option>
+            <option value="si">Slovenia</option>
+            <option value="sk">Slovakia</option>
+            <option value="lt">Lithuania</option>
+            <option value="lv">Latvia</option>
+            <option value="ee">Estonia</option>
+            <option value="jp">Japan</option>
+            <option value="kr">South Korea</option>
+            <option value="cn">China</option>
+            <option value="in">India</option>
+            <option value="br">Brazil</option>
+            <option value="mx">Mexico</option>
+            <option value="ar">Argentina</option>
+            <option value="za">South Africa</option>
+            <option value="sa">Saudi Arabia</option>
+            <option value="ae">United Arab Emirates</option>
+            <option value="qa">Qatar</option>
+            <option value="kw">Kuwait</option>
+            <option value="bh">Bahrain</option>
+            <option value="om">Oman</option>
+            <option value="eg">Egypt</option>
+            <option value="jo">Jordan</option>
+            <option value="lb">Lebanon</option>
+            <option value="iq">Iraq</option>
+            <option value="sy">Syria</option>
+            <option value="ye">Yemen</option>
+            <option value="sd">Sudan</option>
+            <option value="ly">Libya</option>
+            <option value="tn">Tunisia</option>
+            <option value="dz">Algeria</option>
+            <option value="ma">Morocco</option>
+            <option value="mr">Mauritania</option>
+            <option value="so">Somalia</option>
+            <option value="dj">Djibouti</option>
+            <option value="km">Comoros</option>
+            <option value="ps">Palestine</option>
+          </select>
+        </div>
+        <br />
+        <div class="skills_section">
+          <label for="skill1">Skills You Possess</label><br />
+          <input type="checkbox" name="skill1" id="skill1" />
+          <label class="label_skill" for="skill1">Logical Thinking</label>
+          <input type="checkbox" name="skill2" id="skill2" />
+          <label class="label_skill" for="skill2">Self-Learning</label>
+          <input type="checkbox" name="skill3" id="skill3" />
+          <label class="label_skill" for="skill3">Reading Documentation</label
+          ><br />
+          <input type="checkbox" name="skill4" id="skill4" />
+          <label class="label_skill" for="skill4">Patience & Persistence</label>
+          <input type="checkbox" name="skill5" id="skill5" />
+          <label class="label_skill" for="skill5">English Proficiency</label>
+          <input type="checkbox" name="skill6" id="skill6" />
+          <label class="label_skill" for="skill6">Version Control (Git)</label
+          ><br />
+          <input type="checkbox" name="skill7" id="skill7" />
+          <label class="label_skill" for="skill7">Problem Solving</label>
+          <input type="checkbox" name="skill8" id="skill8" />
+          <label class="label_skill" for="skill8">Clean Code Writing</label>
+          <input type="checkbox" name="skill9" id="skill9" />
+          <label class="label_skill" for="skill9">Continuous Learning</label
+          ><br />
+          <input type="checkbox" name="skill10" id="skill10" />
+          <label class="label_skill" for="skill10">Hands-on Practice</label>
+        </div>
+        <br />
+        <div class="conditions_section">
+          <input
+            type="checkbox"
+            name="conditions_section"
+            id="conditions_section"
+            required
+          />
+          <label class="label_conditions_section" for="conditions_section">
+            <span>*</span>
+            Conditions ipsum dolor sit amet consectetur 
+          </label>
+        </div>
+        <br />
+
+        <button type="submit" class="login_button">Singin</button>
+        <button type="reset" class="clean_button">Clean</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

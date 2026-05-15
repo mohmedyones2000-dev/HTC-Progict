@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creat Acaont</title>
+    <style>
+        form{
+            border: 5px rgb(10, 9, 9);
+            border-radius: 5px;
+            border-bottom: 0px;
+        }
+        label{
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        input{
+            border-radius: 5px;
+            border: black 2px;
+            text-align: center;
+        }
+        .email,.pass,.phone{
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        button{
+            color: beige;
+            background-color: black;
+            border-radius: 5px;
+            border: 2px grey;
+            padding: 5px;
+        }
+        option{
+            border-radius: 5px;
+            border: 2px black;
+        }
+        hr{
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" align="center">
+
+        <div class="name_section">
+            <label for="first_name">Name</label><br>
+            <input type="text" name="fname" id="first_name" placeholder="Firest Name" required>
+            <input type="text" name="lname" id="last_name" placeholder="Last Name" required>
+        </div><hr>
+
+        <div class="bod">
+            <label for="">birthday</label><br>
+            <select name="mounth" id="mounth">
+                <option value="1">Jan</option>
+                <option value="2">Fep</option>
+                <option value="3">Mar</option>
+            </select>
+            <select name="day" id="day">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+                <option value="">10</option>
+                <option value="">11</option>
+                <option value="">12</option>
+                <option value="">13</option>
+                <option value="">14</option>
+                <option value="">15</option>
+                <option value="">16</option>
+                <option value="">17</option>
+                <option value="">18</option>
+                <option value="">19</option>
+                <option value="">20</option>
+                <option value="">21</option>
+                <option value="">22</option>
+                <option value="">23</option>
+                <option value="">24</option>
+                <option value="">25</option>
+                <option value="">26</option>
+                <option value="">27</option>
+                <option value="">28</option>
+                <option value="">29</option>
+                <option value="">30</option>
+            </select>
+            <select name="year" id="year">
+                <option value="26">2026</option>
+                <option value="25">2025</option>
+                <option value="24">2024</option>
+                <option value="23">2023</option>
+                <option value="22">2022</option>
+            </select>
+        </div><hr>
+
+        <div class="gen">
+            <label for="male">Gender</label><br>
+            <input type="radio" name="gen" id="male" value="m">
+            <label for="male">Male</label>
+
+            <input type="radio" name="gen" id="female" value="f">
+            <label for="female">Female</label>
+        </div><hr>
+
+        <div class="email">
+            <!-- <label for="email">Email</label><br> -->
+            <input type="email" name="email" id="email" placeholder="Email" required>
+        </div><hr>
+
+        <div class="phone">
+            <!-- <label for="phone">Mobile Number</label><br> -->
+            <input type="tel" name="phone" id="phone" placeholder="Mobile Number">
+        </div><hr>
+
+        <div class="pass">
+            <!-- <label for="pass">Password</label><br> -->
+            <input type="password" name="pass" id="pass" placeholder="Password" required>
+        </div><br>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

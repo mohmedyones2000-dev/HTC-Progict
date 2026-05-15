@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Front-End - Contact-us</title>
+    <link rel="shortcut icon" href="./sin2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+    <nav class="links_bar">
+      <a href="./login.html">Login</a>
+      <a href="./singin.html">Singin</a>
+    </nav>
+    <form action="./index.html" method="get">
+      <fieldset>
+        <div class="user_message_section">
+          <label class="label_message" for="type_user_message">Your Opinion Matters To Us</label
+          ><br />
+          <input
+            type="text"
+            name="type_user_message"
+            id="user_message"
+            placeholder="Enter The Messsage Type..."
+          /><br />
+          <textarea
+            name="user_message"
+            id="user_message"
+            placeholder="Enter The Message..."
+          ></textarea><br>
+          <input class="input_file" type="file" name="file_message" id="file_message" multiple>
+        </div><br>
+        <button type="submit" class="login_button">Send</button>
+        <button type="reset" class="clean_button">Clean</button>
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Front-End - Login</title>
+    <link rel="shortcut icon" href="./sin2.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Login In To Course Front-End</h1>
+    <nav class="links_bar">
+      <a href="./singin.html">Singin</a>
+      <a href="./contact-us.html">Contact Us</a>
+    </nav>
+    <form action="./index.html" method="get">
+      <fieldset>
+        <div class="user_name_section">
+          <label for="user_name">User Name <span>*</span></label
+          ><br />
+          <input
+            type="text"
+            name="user_name"
+            id="user_name"
+            placeholder="Enter User Name..."
+            required
+          />
+        </div>
+        <br />
+        <div class="email_section">
+          <label for="email">Email <span>*</span></label
+          ><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email..."
+            required
+          />
+        </div>
+        <br />
+        <div class="password_section">
+          <label for="password"
+            >Password <span style="color: red">*</span></label
+          ><br />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Enter Password..."
+            required
+          />
+        </div>
+        <br />
+        <button type="submit" class="login_button">Login</button>
+        <button type="reset" class="clean_button">Clean</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
