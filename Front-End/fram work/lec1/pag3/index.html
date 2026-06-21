@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panto</title>
+    <!--bootstrap icons library  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <!--bootstrap css library  -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- main css file  -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- START header SECTION -->
+    <header class="min-vh-100">
+      <nav class="navbar navbar-expand-lg navbar-dark container">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white fs-4 fw-bold" href="#">Panto</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="bi bi-list fs-1"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-4">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Furniture
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" aria-current="page" href="#"
+                  >Shop</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">About Us</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contact</a>
+              </li>
+            </ul>
+            <button
+              class="btn text-white position-relative"
+              id="cartButton"
+              type="submit"
+            >
+              <i class="bi bi-bag-dash-fill fs-5"></i>
+              <span id="cartCount">0</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <main class="container text-center mt-5 d-flex flex-column gap-4">
+        <h1 class="text-white mx-auto">
+          Make your interior more <br />
+          minimalistic & modern
+        </h1>
+        <p class="text-white">
+          Turn your room with panto into a lot more minimalist <br />
+          and modern with ease and speed
+        </p>
+        <form class="form-control d-flex w-50 mx-auto" role="search">
+          <input
+            class="mx-auto w-75 text-white p-2 rounded-5"
+            type="search"
+            placeholder="Search furniture"
+            aria-label="Search"
+          />
+          <button id="btnSearch" class="btn" type="submit">
+            <i class="bi bi-search text-white"></i>
+          </button>
+        </form>
+      </main>
+    </header>
+
+    <!-- START FEATURES SECTION -->
+    <section
+      id="features"
+      class="container min-vw-100 mt-5 row row-cols-1 row-cols-md-3 row-cols-lg-4"
+    >
+      <div id="cardTitel" class="col col-md-12 g-4">
+        <h2>Why Choosing Us</h2>
+      </div>
+      <div id="card" class="col g-4 align-items-center">
+        <h3>Luxury facilities</h3>
+        <p>
+          The advantage of hiring a workspace with us is that givees you
+          comfortable service and all-around facilities.
+        </p>
+        <button class="btn" type="submit">More Info</button>
+      </div>
+      <div id="card" class="col g-4 align-items-center">
+        <h3>Affordable Price</h3>
+        <p>
+          You can get a workspace of the highst quality at an affordable price
+          and still enjoy the facilities that are oly here.
+        </p>
+        <button class="btn" type="submit">More Info</button>
+      </div>
+      <div id="card" class="col g-4 align-items-center">
+        <h3>Many Choices</h3>
+        <p>
+          We provide many unique work space choices so that you can choose the
+          workspace to your liking.
+        </p>
+        <button class="btn" type="submit">More Info</button>
+      </div>
+    </section>
+
+    <!-- START PRODUCTS SECTION -->
+    <section id="products" class="container min-vh-100 mt-5">
+      <div id="productTitle" class="container m-auto">
+        <h2 class="text-center mb-5">Best Selling Product</h2>
+        <div id="myTab" class="nav nav-tabs" role="tablist">
+          <ul class="nav nav-tabs" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active"
+                id="home-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#home-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="home-tab-pane"
+                aria-selected="true"
+              >
+                Chair
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="profile-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#profile-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="profile-tab-pane"
+                aria-selected="false"
+              >
+                Beds
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="contact-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#contact-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="contact-tab-pane"
+                aria-selected="false"
+              >
+                Sofa
+              </button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link"
+                id="disabled-tab"
+                data-bs-toggle="tab"
+                data-bs-target="#disabled-tab-pane"
+                type="button"
+                role="tab"
+                aria-controls="disabled-tab-pane"
+                aria-selected="false"
+              >
+                Lamp
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="home-tab-pane"
+          role="tabpanel"
+          aria-labelledby="home-tab"
+          tabindex="0"
+        >
+          li 1
+        </div>
+        <div
+          class="tab-pane fade"
+          id="profile-tab-pane"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          tabindex="0"
+        >
+          li 2
+        </div>
+        <div
+          class="tab-pane fade"
+          id="contact-tab-pane"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+          tabindex="0"
+        >
+          li 3
+        </div>
+        <div
+          class="tab-pane fade"
+          id="disabled-tab-pane"
+          role="tabpanel"
+          aria-labelledby="disabled-tab"
+          tabindex="0"
+        >
+          li 4
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

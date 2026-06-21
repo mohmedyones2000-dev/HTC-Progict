@@ -1,0 +1,24 @@
+- go up btn
+- next slide
+- form viladition
+https://regex101.com/
+// const emailRegex =
+//     /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+// const passwordRegex =
+//     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+// const internationalPhoneRegex = /^\+?[1-9]\d{1,14}$/;
+// const phoneFormatRegex = /^\(\d{3}\)\s\d{3}-\d{4}$/;
+// const usernameRegex = /^[a-zA-Z0-9_]{3,16}$/;
+
+
+// const onlyLettersRegex = /^[a-zA-Z]+$/;
+
+// const onlyNumbersRegex = /^\d+$/;
+// const onlyNumbersRegex1 = /^[0-9]/;
+
+
+// const emailToTest = "test@example.com";
+// const result = emailRegex.test(emailToTest);
+// console.log(result); 

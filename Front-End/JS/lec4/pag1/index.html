@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pag1</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+      }
+      form {
+        width: 500px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      label {
+        font-size: 2rem;
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        font-size: 1.5rem;
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+      span {
+        font-size: 1.5rem;
+        display: none;
+        color: red;
+        background-color: #fdd;
+        padding: 5px;
+        border: 1px solid red;
+        border-radius: 3px;
+        &.show {
+          display: block;
+        }
+      }
+      button {
+        display: flex;
+        padding: 5px 10px;
+        justify-content: center;
+        justify-self: center;
+        margin: 10px auto;
+        font-size: 1.7rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        &:hover {
+          background-color: #0056b3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <label for="tel">Telephone:</label>
+      <input
+        type="text"
+        name="tel"
+        id="tel"
+        placeholder="Enter your telephone number"
+      />
+      <span id="error1" class="error1"></span>
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Enter your email address"
+      />
+      <span id="error2" class="error2"></span>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      // JavaScript code for form validation and submission
+      const telInput = document.querySelector("#tel");
+      const emailInput = document.querySelector("#email");
+      const errorSpan1 = document.querySelector("#error1");
+      const errorSpan2 = document.querySelector("#error2");
+      const btn = document.querySelector("button");
+
+      btn.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        let telval = telInput.value.trim();
+
+        if (!telval) {
+          errorSpan1.textContent = "Telephone cannot be empty.";
+          errorSpan1.classList.add("show");
+        } else if (isNaN(telval)) {
+          errorSpan1.textContent = "Telephone must contain only numbers.";
+          errorSpan1.classList.add("show");
+        } else if (telval.length !== 10) {
+          errorSpan1.textContent =
+            "Telephone must be exactly 10 characters long.";
+          errorSpan1.classList.add("show");
+        } else {
+          errorSpan1.textContent = "";
+          errorSpan1.classList.remove("show");
+        }
+
+        let emailVal = emailInput.value.trim();
+        
+        if (!emailVal) {
+          errorSpan2.textContent = "Email cannot be empty.";
+          errorSpan2.classList.add("show");
+        } else if (!isValidEmail(emailVal)) {
+          errorSpan2.textContent = "Please enter a valid email address.";
+          errorSpan2.classList.add("show");
+        } else {
+          errorSpan2.textContent = "";
+          errorSpan2.classList.remove("show");
+        }
+      });
+    </script>
+  </body>
+</html>

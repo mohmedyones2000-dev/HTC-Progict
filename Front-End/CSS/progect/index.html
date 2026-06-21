@@ -18,8 +18,7 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
-
+  <html>
     <!-- start loading bage section -->
     <div class="lds-ring">
       <div></div>
@@ -31,36 +30,89 @@
 
     <!-- start hedaer section -->
     <header>
-      <div class="logoImg">
+      <div class="icon-sec">
         <img
-          src="./img/haeder_img/Layer_1.png"
-          alt="شعار مؤسسة دار البلد للحلول الأعمال"
+          src="./img/header-img/icon-img.png"
+          alt="شعار مؤسسة دار البلد لحلول الأعمال"
         />
       </div>
       <nav>
-        <div class="navLinks">
-          <div class="dropdown">
-            <a href="#">من نحن <i class="fa-solid fa-angle-down"></i></a>
-            <div class="dropdownItems">
-              <a href="#">abdlds</a>
-              <a href="#">abdlds</a>
-              <a href="#">abdlds</a>
-              <a href="#">abdlds</a>
+        <div class="header-links">
+          <div class="sec1-popup-list">
+            <a href="#">
+              من نحن
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="popup-list">
+              <a href="#"
+                >نبذة عن دار البلد لحلول الاعمال
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >مجلس الإدارة
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >المساهمات الاجتماعية
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#">
+                شركات تابعة
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
             </div>
           </div>
           <a href="#">الحلول</a>
           <a href="#">شركاء النجاح</a>
-          <a href="#">علاقات المستثمرين </a>
+          <div class="sec2-popup-list">
+            <a href="#">
+              علاقات المستثمرين
+              <i class="fa-solid fa-angle-down"></i>
+            </a>
+            <div class="popup-list">
+              <a href="#"
+                >نشرة معلومات السهم
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >حوكمة الشركة
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >المعلومات المالية
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >توزيعات الأرباح
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >اجتماعات الجمعية العامة
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >إعلانات الشركة
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >التقارير
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+              <a href="#"
+                >التواصل مع علاقات المستثمرين
+                <i class="fa-solid fa-angle-left"></i>
+              </a>
+            </div>
+          </div>
           <a href="#">التوظيف</a>
         </div>
-        <div class="navAction">
-          <a href="#"><i class="fa-regular fa-headphones"></i></a>
-          <a href="#">EN</a>
+        <div class="header-action">
+          <button>
+            <i class="fa-regular fa-headphones"></i>
+          </button>
+          <button>EN</button>
         </div>
       </nav>
-      <div class="list-nav">
-        <button>قائمة الروابط</button>
-      </div>
     </header>
     <!-- end hedaer section -->
 
@@ -69,8 +121,8 @@
       <div class="container">
         <div class="heroContent">
           <h1>
-            شركة سعودية رائـــــــــــــــــــــــدة في<br />
-            مجال تكنولوجيا المعلومــــــــات
+            شركة سعودية رائـــــــــــــــــــــــدة في مجال تكنولوجيا
+            المعلومــــــــات
           </h1>
           <p>
             حلول وخدمات مدارة مبتكرة وشاملة لتعزيز كفاءة الأعمال والتكنولوجيا
@@ -78,16 +130,19 @@
           </p>
           <div class="heroAction">
             <a href="#" class="more">عرض المزيد</a>
-            <a href="#" class="button prev"
-              ><i class="fa-solid fa-angle-right"></i
-            ></a>
-            <a href="#" class="button next"
-              ><i class="fa-solid fa-angle-left"></i
-            ></a>
+            <button class="prev">
+              <i class="fa-solid fa-angle-right"></i>
+            </button>
+            <button class="next">
+              <i class="fa-solid fa-angle-left"></i>
+            </button>
           </div>
         </div>
         <div class="heroImg">
-          <img src="./img/hero_img/hero_img.png" alt=" خريطة دولة السعودية" />
+          <img class="active" src="./img/hero_img/hero_img.png" alt=" خريطة دولة السعودية" />
+          <img src="./img/solve_img/solve1.jpeg" alt=" خريطة دولة السعودية" />
+          <img src="./img/solve_img/solve2.jpeg" alt=" خريطة دولة السعودية" />
+          <img src="./img/solve_img/solve3.jpeg" alt=" خريطة دولة السعودية" />
         </div>
       </div>
     </section>
@@ -208,5 +263,7 @@
       </div>
     </section>
     <!-- end solve section -->
+
+    <script src="main.js"></script>
   </body>
 </html>
