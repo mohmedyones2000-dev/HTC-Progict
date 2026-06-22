@@ -1,0 +1,175 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px 15px;
+    background-color: #f4f7f6;
+    color: #333;
+    -webkit-tap-highlight-color: transparent;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+#tasks-container {
+    max-width: 600px;
+    margin: 20px auto 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.task-card {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    color: #856404;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+    transition:
+        transform 0.2s,
+        background-color 0.3s ease;
+}
+
+.task-title {
+    font-size: 16px;
+    font-weight: bold;
+    word-break: break-word;
+}
+
+.task-status {
+    font-size: 13px;
+    margin-right: 5px;
+    font-style: italic;
+    display: block;
+    margin-top: 4px;
+    opacity: 0.8;
+}
+
+.buttons-group {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+}
+
+.btn-success {
+    background-color: #28a745;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-delete {
+    background-color: transparent;
+    color: #e74c3c;
+    font-size: 20px;
+    padding: 6px;
+}
+
+.completed {
+    background-color: #d4edda !important;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.failed {
+    background-color: #f8d7da !important;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.control-buttons {
+    max-width: 600px;
+    margin: 25px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+#add-task-btn {
+    background-color: #3498db;
+    color: white;
+    font-size: 26px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(52, 152, 219, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clear-all-btn {
+    background-color: #e74c3c;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(231, 76, 60, 0.2);
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    body {
+        margin: 10px;
+    }
+
+    .task-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .buttons-group {
+        width: 100%;
+        justify-content: flex-end;
+        border-top: 1px dashed rgba(0, 0, 0, 0.05);
+        padding-top: 8px;
+    }
+
+    button {
+        padding: 10px 16px;
+        flex: 1;
+        text-align: center;
+    }
+
+    .btn-delete {
+        flex: 0;
+        font-size: 22px;
+    }
+
+    .control-buttons {
+        width: 100%;
+        flex-direction: column-reverse;
+        gap: 15px;
+    }
+
+    #clear-all-btn {
+        width: 100%;
+        text-align: center;
+    }
+}

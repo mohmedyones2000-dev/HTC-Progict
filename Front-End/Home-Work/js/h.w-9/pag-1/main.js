@@ -17,12 +17,12 @@ grades.forEach((grade, index) => {
     resultDiv.classList.add('result-card');
     
     if (grade >= 60) {
-    resultDiv.textContent = `الطالب ${index + 1}: ناجح (العلامة: ${grade})`;
-    resultDiv.classList.add('success');
-} else {
-    resultDiv.textContent = `الطالب ${index + 1}: راسب (العلامة: ${grade})`;
-    resultDiv.classList.add('fail'); 
-}
+        resultDiv.textContent = `الطالب ورقم العلامة المدخلة ${index + 1}: ناجح (العلامة: ${grade})`;
+        resultDiv.classList.add('success');
+    } else {
+        resultDiv.textContent = `الطالب ورقم العلامة المدخلة ${index + 1}: راسب (العلامة: ${grade})`;
+        resultDiv.classList.add('fail'); 
+    }
     
     container.appendChild(resultDiv);
 });
