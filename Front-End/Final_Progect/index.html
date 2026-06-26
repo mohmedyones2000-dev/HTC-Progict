@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced User CRUD - System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    </style>
+  </head>
+  <body
+    id="bodyBg"
+    class="bg-[#050714] bg-gradient-to-tr from-[#050714] via-[#090d26] to-[#050714] min-h-screen flex items-center justify-center p-4 md:p-8 text-white font-sans relative transition-all duration-300"
+  >
+    <div
+      id="toast"
+      class="fixed top-5 right-5 z-50 transform translate-x-72 opacity-0 text-[#050714] font-bold px-6 py-3.5 rounded-xl shadow-lg flex items-center gap-2 transition-all duration-300 pointer-events-none"
+    >
+      <svg
+        class="w-5 h-5"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="3"
+          d="M5 13l4 4L19 7"
+        ></path>
+      </svg>
+      <span id="toastMessage">Action successful!</span>
+    </div>
+
+    <div
+      class="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-5 gap-8 items-start"
+    >
+      <div
+        id="formCard"
+        class="lg:col-span-2 bg-[#0f1123]/80 backdrop-blur-md border border-[#1e2238] rounded-2xl p-6 md:p-8 shadow-2xl shadow-cyan-950/30 sticky top-8 transition-all duration-300"
+      >
+        <div
+          class="flex items-center justify-end gap-3 mb-6 border-b border-[#1e2238]/60 pb-4"
+          id="controlBar"
+        >
+          <button
+            id="langBtn"
+            onclick="toggleLanguage()"
+            class="text-xs bg-cyan-500/10 hover:bg-cyan-500 text-cyan-400 hover:text-[#050714] px-3 py-1.5 rounded-lg border border-cyan-500/20 font-bold transition-all duration-200"
+          >
+            العربية
+          </button>
+          <button
+            id="themeBtn"
+            onclick="toggleTheme()"
+            class="text-xs bg-purple-500/10 hover:bg-purple-500 text-purple-400 hover:text-white px-3 py-1.5 rounded-lg border border-purple-500/20 font-bold transition-all duration-200"
+          >
+            ☀️ Light Mode
+          </button>
+        </div>
+
+        <div class="mb-6">
+          <h2
+            id="mainTitle"
+            class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400"
+          >
+            User Management
+          </h2>
+          <p id="mainSubtitle" class="text-xs text-gray-500 mt-1">
+            Enter registered info with continuous validation.
+          </p>
+        </div>
+
+        <form class="space-y-5" onsubmit="event.preventDefault()">
+          <div>
+            <label
+              id="lblUsername"
+              for="username"
+              class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2"
+              >User Name</label
+            >
+            <input
+              type="text"
+              id="username"
+              placeholder="Enter user name"
+              class="w-full bg-[#141730] border border-[#222746] rounded-xl px-4 py-3 text-gray-100 placeholder-gray-600 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/10 transition-all duration-200"
+            />
+            <span
+              id="usernameError"
+              class="text-xs text-red-500 mt-1.5 hidden block"
+              >Username is required.</span
+            >
+          </div>
+
+          <div>
+            <label
+              id="lblUserage"
+              for="userage"
+              class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2"
+              >User Age</label
+            >
+            <input
+              type="number"
+              id="userage"
+              placeholder="Enter user age"
+              class="w-full bg-[#141730] border border-[#222746] rounded-xl px-4 py-3 text-gray-100 placeholder-gray-600 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/10 transition-all duration-200"
+            />
+            <span
+              id="userageError"
+              class="text-xs text-red-500 mt-1.5 hidden block"
+              >Age is required.</span
+            >
+          </div>
+
+          <div>
+            <label
+              id="lblUseremail"
+              for="useremail"
+              class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-2"
+              >User Email</label
+            >
+            <input
+              type="text"
+              id="useremail"
+              placeholder="Enter user email"
+              class="w-full bg-[#141730] border border-[#222746] rounded-xl px-4 py-3 text-gray-100 placeholder-gray-600 focus:outline-none focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/10 transition-all duration-200"
+            />
+            <span
+              id="useremailError"
+              class="text-xs text-red-500 mt-1.5 hidden block"
+              >Email is required.</span
+            >
+          </div>
+
+          <button
+            type="submit"
+            id="submitBtn"
+            class="w-full bg-gradient-to-r from-[#00b4d8] to-[#0077b6] hover:from-[#00c4e8] hover:to-[#0088cc] text-[#050714] font-bold py-3.5 px-4 rounded-xl transition-all duration-300 text-center text-sm uppercase tracking-wider mt-2 shadow-lg shadow-cyan-500/10 hover:shadow-cyan-500/30 transform hover:-translate-y-0.5"
+          >
+            Create User
+          </button>
+        </form>
+      </div>
+
+      <div
+        id="tableCard"
+        class="lg:col-span-3 bg-[#0f1123]/50 backdrop-blur-md border border-[#1e2238] rounded-2xl overflow-hidden shadow-2xl shadow-black/50 transition-all duration-300"
+      >
+        <div
+          id="tableHeader"
+          class="p-6 border-b border-[#1e2238] bg-[#12152a]/40"
+        >
+          <h2 id="tableTitle" class="text-lg font-bold text-gray-200">
+            Active Users
+          </h2>
+          <p id="tableSubtitle" class="text-xs text-gray-500 mt-1">
+            Review and manage all currently registered users.
+          </p>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse" id="mainTable">
+            <thead>
+              <tr
+                id="tableRowHeader"
+                class="text-[11px] uppercase tracking-widest text-cyan-400 font-bold bg-[#141731]/60"
+              >
+                <th
+                  class="py-4 px-5 text-center w-12 border-b border-[#1e2238]"
+                >
+                  #
+                </th>
+                <th id="thName" class="py-4 px-5 border-b border-[#1e2238]">
+                  User Name
+                </th>
+                <th id="thEmail" class="py-4 px-5 border-b border-[#1e2238]">
+                  User Email
+                </th>
+                <th id="thAge" class="py-4 px-5 border-b border-[#1e2238]">
+                  User Age
+                </th>
+                <th
+                  id="thActions"
+                  class="py-4 px-5 text-center border-b border-[#1e2238]"
+                >
+                  Actions
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              id="userTableBody"
+              class="divide-y divide-[#1e2238]/60"
+            ></tbody>
+          </table>
+
+          <div
+            id="emptyMessage"
+            class="py-12 text-center text-gray-600 text-sm"
+          >
+            No users created yet. Fill the form to add someone.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
